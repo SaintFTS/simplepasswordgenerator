@@ -1,0 +1,13 @@
+[package]
+name = "t9"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+time = {path="C:/RustGit/time", features=["formatting", "macros"]}
+rand = {path="C:/RustGit/rand"}
+
+[profile.release]
+opt-level="s"
+strip=true
+lto=true
